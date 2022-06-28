@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL:
+- Live Site URL: https://coder22ji.github.io/productPreview/
 
 ## My process
 
