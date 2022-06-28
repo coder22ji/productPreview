@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Pankaj Kumar Frontend Mentor | Product preview card component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        colors: {
+          'primary': 'hsl(158, 36%, 37%)',
+          'cream': 'hsl(30, 38%, 92%)',
+          'darkBlue': 'hsl(212, 21%, 14%)',
+          'darkGray': 'hsl(228, 12%, 48%)',
+          'white': '#ffffff',
+          'dark': 'hsl(158,36%,28%)'
+        }
+      }
+    }
+  </script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @media screen and (max-width: 767px){
+      .imgDesktop{
+        display: none;
+      }
+
+    }
+    @media screen and (min-width: 768px){
+      .imgMobile{
+        display: none;
+      }
+      .imgDesktop{
+        display: inline;
+      }
+    }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="min-h-screen flex items-center justify-center m-8 md:m-0 flex flex-col bg-cream">
+
+    <div class=" flex flex-col md:flex-row md:space-y-0 shadow-2xl rounded-xl w-96 md:w-[625px] md:h-[500px] bg-white">
+
+      <img src="./images/image-product-mobile.jpg" class="h-64 rounded-t-xl imgMobile " alt="">
+      <img src="./images/image-product-desktop.jpg" class="w-[300px] imgDesktop rounded-bl-xl rounded-tl-xl " alt="">
+      
+      <div class="flex flex-col px-6 py-6 md:pl-8 md:pt-8">
+        <p class="space-y-4 uppercase text-darkGray text-sm tracking-[.25em]">Perfume</p>
+        <h1 class="text-darkBlue text-4xl font-bold mt-2">Gabrielle Essence Eau De Parfume</h1>
+        <p class="text-darkGray mt-4 md:my-8">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.</p>
+          <div class="text-3xl mt-12 md:mt-0 text-primary font-semibold">$149.99 <span class="text-sm ml-6  line-through  text-darkGray">$169.99</span></div>
+          <button class="bg-primary flex mt-4 hover:bg-dark md:mt-8 items-center justify-center rounded-xl"> <img src="./images/icon-cart.svg" class="h-4 px-2" alt=""><div class="text-white py-4">
+            add to Cart
+          </div></button>
+
+      </div>
+
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/coder22ji">Pankaj Kumar</a>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
